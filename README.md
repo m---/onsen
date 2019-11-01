@@ -33,7 +33,7 @@ $ pip install -r requirements.txt
 
 ### Startup service  
 ```
-$ python3 src/onsen.py
+$ python3 onsen.py
 ```
 
 When the service starts, `api_secret` is output on the console.
@@ -78,13 +78,13 @@ $ curl http://<HOST>/<api_secret>/get/<key>
 
 ## Debug  
 ```
-$ FLASK_DEBUG=1 python3 src/onsen.py
+$ FLASK_DEBUG=1 python3 onsen.py
 ```
 
 *Warning: If you enable debug, you can access the page that the XSS vulnerability exists.*
 
 ## More information  
-[src/onsen.py](src/onsen.py)
+[onsen.py](onsen.py)
 
 ## Disclaimer  
 Don't use on real world websites.
