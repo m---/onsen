@@ -19,7 +19,7 @@ input[value^="xc"]:first-child {
 ```
 
 CSS has a load priority and will not work as expected if you use import recursive normally. I solved it with the pseudo-class "first-child" chain.  
-Reference: https://developer.mozilla.org/docs/Web/CSS/Specificity
+Reference: https://developer.mozilla.org/docs/Web/CSS/Specificity  
 Slide: [A New Era of CSS Injection](http://ja.avtokyo.org/MediaArchives#2019)
 
 
