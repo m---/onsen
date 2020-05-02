@@ -20,6 +20,8 @@ input[value^="xc"]:first-child {
 
 CSS has a load priority and will not work as expected if you use import recursive normally. I solved it with the pseudo-class "first-child" chain.  
 Reference: https://developer.mozilla.org/docs/Web/CSS/Specificity
+Slide: [A New Era of CSS Injection](http://ja.avtokyo.org/MediaArchives#2019)
+
 
 ## Dependency  
 - Python 3.x
@@ -73,8 +75,9 @@ $ curl http://<HOST>/<api_secret>/get/<key>
 }
 ```
 
-### Screenshot  
-![screenshot](screenshot.gif)
+### Demo  
+[![Demo](https://img.youtube.com/vi/06gHFGbhTGY/0.jpg)](https://www.youtube.com/watch?v=06gHFGbhTGY)
+
 
 ## Debug  
 ```

@@ -52,9 +52,9 @@ def stage1(key):
 def api_set(api_secret):
     if api_secret != app.api_secret:
         return '', 404
-    chars = request.form['c'] if 'c' in request.form else string.ascii_letters + string.digits
-    selector = request.form['s'] if 's' in request.form else 'input[value^="{leaked}"]'
-    key = request.form['key'] if 'key' in request.form else os.urandom(16).hex()
+    chars = request.form('c', string.ascii_letters + string.digits)
+    selector = request.form('s', 'input[value^="{leaked}"]')
+    key = request.form('key', os.urandom(16).hex())
     app.data[key] = {'chars': chars, 'selector': selector, 'run': False, 'leaked': ''}
     return jsonify({
         'key': key,
